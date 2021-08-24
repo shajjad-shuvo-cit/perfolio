@@ -1,0 +1,35 @@
+@import 'colors';
+
+@mixin trans ($time)
+{
+    transition: all linear $time;
+    -o-transition: all linear $time;
+    -moz-transition: all linear $time;
+    -ms-transition: all linear $time;
+    -webkit-transition: all linear $time;
+}
+
+
+@mixin  sideText() {
+    font-family: $hf;
+    font-weight: 400;
+    font-size: 118px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.05);
+    writing-mode: sideways-lr;
+}
+
+@mixin cta() {
+    font-family: $pf;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    background: linear-gradient(to right,$grcl1,$grcl2);
+    line-height: 46px;
+    padding: 0 20px;
+}
+
+@mixin ctahover(){
+    background: linear-gradient(to left,$grcl1,$grcl2);
+}

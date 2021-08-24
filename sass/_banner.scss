@@ -1,0 +1,38 @@
+@import 'colors';
+@import 'mixin';
+
+#banner{
+    position: relative;
+    .side-text{
+        position: absolute;
+        h3{
+            @include sideText;
+        }
+    }
+
+    .banner-chat{
+
+    }
+
+    .banner-image{
+
+    }
+
+    .banner-text{
+        p{
+
+        }
+        h1{
+
+        }
+        h4{
+
+        }
+        a{
+            @include cta;
+            &:hover{
+                @include ctahover;
+            }
+        }
+    }
+}
