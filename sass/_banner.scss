@@ -3,32 +3,161 @@
 
 #banner{
     position: relative;
+    padding-top: 30px;
+    background: $bg1;
     .side-text{
         position: absolute;
+        left: -30px;
+        top: -15px;
         h3{
             @include sideText;
+            margin-bottom: 0;
+            letter-spacing: 10px;
         }
     }
 
     .banner-chat{
+        padding-top: 125px;
+        .banner-chat-item{
+            float: right;
+            margin-right: 65px;
+            p{
+                background: #fff;
+                padding: 10px;
+                border-radius: 25px;
+                display: inline-block;
+                @include shadow;
+                font-family: $pf;
+                font-weight: 400;
+                font-size: 16px;
+                color: $pc;
+            }
+        }
+        .slick-current{
+            opacity: 0.5;
+        } 
 
+        .even{
+            p{
+                transform: translateX(50px);
+            }
+        }
+
+        form{
+            display: inline-block;
+            background: #fff;
+            padding: 10px;
+            border-radius: 25px;
+            @include shadow;
+            input{
+                border: none;
+                outline: none;
+                &:focus{
+                    color: $grcl1;
+                }
+            }
+            i{
+                padding: 0 2px;
+                cursor: pointer;
+            }
+        }
     }
 
     .banner-image{
+        position: relative;
+        z-index: 1;
+        &::before{
+            content: '';
+            width: 10px;
+            height: 428px;
+            background: $grcl2;
+            position: absolute;
+            right: 50px;
+            top: 85px;
+            z-index: 2;
+        }
 
+        &::after{
+            content: '';
+            width: 50px;
+            height: 10px;
+            background: $grcl2;
+            position: absolute;
+            right: 50px;
+            bottom: 113px;
+            z-index: -1;
+        }
+
+        .banner-img-border{
+            position: relative;
+            z-index: 1;
+            &::before{
+                content: '';
+                width: 10px;
+                height: 190px;
+                background: $grcl1;
+                position: absolute;
+                left: 50px;
+                top: 85px;
+                z-index: -1;
+            }
+
+            &::after{
+                content: '';
+                width: 306px;
+                height: 10px;
+                background:linear-gradient(to right,$grcl1,$grcl2);
+                position: absolute;
+                left: 50px;
+                top: 85px;
+                z-index: -1;
+            }
+        }
+        .image-chat{
+            position: absolute;
+            top: 200px;
+            left: 20px;
+            z-index: 5;
+            i{
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                text-align: center;
+                color: $grcl2;
+                background: #fff;
+                border-radius: 50%;
+                font-size: 24px;
+                cursor: pointer;
+            }
+        }
     }
 
     .banner-text{
         p{
-
+            padding-top: 220px;
+            font-family: $pf;
+            font-weight: 100;
+            font-size: 34px;
+            color: $grcl1;
+            text-transform: capitalize;
         }
         h1{
-
+            font-family: $hf;
+            font-weight: 400;
+            font-size:50px;
+            text-transform: capitalize;
+            color: $grcl1;
+            margin-top: -30px;
         }
         h4{
-
+            font-family: $pf;
+            font-size: 16px;
+            font-weight: 500;
+            color: $pc;
+            text-transform: capitalize;
         }
         a{
+            margin-top: 22px;
             @include cta;
             &:hover{
                 @include ctahover;

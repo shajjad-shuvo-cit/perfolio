@@ -28,8 +28,14 @@
     background: linear-gradient(to right,$grcl1,$grcl2);
     line-height: 46px;
     padding: 0 20px;
+    outline: none;
+    border: none;
 }
 
 @mixin ctahover(){
     background: linear-gradient(to left,$grcl1,$grcl2);
+}
+
+@mixin shadow {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
 }
