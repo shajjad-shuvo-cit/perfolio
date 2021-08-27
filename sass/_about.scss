@@ -1,0 +1,72 @@
+@import 'colors';
+@import 'mixin';
+
+#about{
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .side-text{
+        position: absolute;
+        right: 115px;
+        top: 0;
+        h3{
+            @include sideText;
+            font-size: 90px;
+            margin-bottom: 0;
+            white-space: nowrap;
+        }
+    }
+    .about-image{
+        position: relative;
+        z-index: 1;
+        .about-border{
+            position: absolute;
+            bottom: 0;
+            left: -16px;
+            z-index: -1;
+        }
+    }
+
+    .about-text{
+        .heading{
+            .title{
+                @include title;
+                font-size: 32px;
+                padding-bottom: 52px;
+            }
+        }
+
+        p{
+            @include detail;
+        }
+
+        .about-item{
+            .about-icon-item{
+                padding: 20px 0;
+                @include trans(0.4s);
+                background: rgba($bg1,.35);
+                margin-bottom: 40px;
+                &:hover{
+                    @include shadow;
+                }
+            }
+            .about-icon-head{
+                h4{
+                    text-transform: capitalize;
+                    font-family: $abtext;
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: $pc;
+                    span{
+                        font-size: 20px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* =======================
+    about css ends
+======================== */ 

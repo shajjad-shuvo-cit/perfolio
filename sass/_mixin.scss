@@ -36,6 +36,21 @@
     background: linear-gradient(to left,$grcl1,$grcl2);
 }
 
-@mixin shadow {
+@mixin shadow() {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+}
+
+@mixin  title (){
+    font-family: $hf;
+    font-weight: 400;
+    color: $hc;
+    text-transform: capitalize;
+}
+
+@mixin detail {
+    font-family: $pf;
+    font-weight: 400;
+    font-size: 14px;
+    color: $pc;
+    line-height: 24px;
 }

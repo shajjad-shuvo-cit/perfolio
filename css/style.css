@@ -101,7 +101,7 @@ img {
   outline: none;
 }
 #banner .banner-chat form input:focus {
-  color: #00bbff;
+  color: #444444;
 }
 #banner .banner-chat form i {
   padding: 0 2px;
@@ -211,3 +211,81 @@ img {
 #banner .banner-text a:hover {
   background: linear-gradient(to left, #00bbff, #0066e7);
 }
+
+/* =======================
+    banner css ends 
+======================== */
+#about {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#about .side-text {
+  position: absolute;
+  right: 115px;
+  top: 0;
+}
+#about .side-text h3 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: 400;
+  font-size: 118px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.05);
+  writing-mode: sideways-lr;
+  font-size: 90px;
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+#about .about-image {
+  position: relative;
+  z-index: 1;
+}
+#about .about-image .about-border {
+  position: absolute;
+  bottom: 0;
+  left: -16px;
+  z-index: -1;
+}
+#about .about-text .heading .title {
+  font-family: "Abril Fatface", cursive;
+  font-weight: 400;
+  color: #222222;
+  text-transform: capitalize;
+  font-size: 32px;
+  padding-bottom: 52px;
+}
+#about .about-text p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #444444;
+  line-height: 24px;
+}
+#about .about-text .about-item .about-icon-item {
+  padding: 20px 0;
+  transition: all linear 0.4s;
+  -o-transition: all linear 0.4s;
+  -moz-transition: all linear 0.4s;
+  -ms-transition: all linear 0.4s;
+  -webkit-transition: all linear 0.4s;
+  background: rgba(245, 245, 245, 0.35);
+  margin-bottom: 40px;
+}
+#about .about-text .about-item .about-icon-item:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.05);
+}
+#about .about-text .about-item .about-icon-head h4 {
+  text-transform: capitalize;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #444444;
+}
+#about .about-text .about-item .about-icon-head h4 span {
+  font-size: 20px;
+  display: block;
+}
+
+/* =======================
+    about css ends
+======================== */
