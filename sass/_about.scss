@@ -44,9 +44,9 @@
             .about-icon-item{
                 padding: 20px 0;
                 @include trans(0.4s);
-                background: rgba($bg1,.35);
                 margin-bottom: 40px;
                 &:hover{
+                    background: rgba($bg1,.35);
                     @include shadow;
                 }
             }
